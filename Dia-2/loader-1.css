@@ -1,0 +1,106 @@
+/*
+==============
+	Globals
+==============
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	font-family: Courier;
+}
+
+/*
+==============
+	Header
+==============
+*/
+header{
+	width: 100%; max-height: 100px;
+	padding: 1em;
+	text-align: center;
+	background-color: #000;
+	border-bottom: 5px outset #666;
+}
+
+header h1{
+	padding-bottom: .6em;
+	text-decoration: underline;
+}
+
+header p{
+	font-style: italic;
+}
+
+/*
+==============
+	Loader 1 
+==============
+*/
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 76vh;
+	background: #082708;
+	animation: animateBg 10s linear infinite;
+}
+
+@keyframes animateBg{
+	0%{
+		filter: hue-rotate(0deg);
+	}
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
+
+section .loader{
+	position: relative;
+	width: 120px; height: 120px;
+}
+
+section .loader span{
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	transform: rotate(calc(18deg * var(--i)));
+}
+
+section .loader span::before{
+	content: '';	
+	position: absolute;
+	top: 0; left: 0;
+	width: 15px; height: 15px;
+	border-radius: 50%;
+	background: #00FF0A;
+	box-shadow:0 0 10px #00FF0A, 
+			   0 0 10px #00FF0A, 
+			   0 0 10px #00FF0A, 
+			   0 0 10px #00FF0A, 
+			   0 0 10px #00FF0A, 
+			   0 0 10px #00FF0A;
+	animation: animate 2s linear infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate{
+	0%{
+		transform: scale(1);
+	}
+	80%, 100%{
+		transform: scale(0);	
+	}
+}
+
+footer{
+	background-color: #000;
+	padding: 1em;
+	padding-bottom: .8em;
+}
+
+footer h4{
+	font-size: .9em;
+	color: #666;
+}
