@@ -1,0 +1,153 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #111;
+	text-align: center;
+}
+
+/*
+===============
+	Header
+===============
+*/
+header{
+	background: #3A1034;
+	width: 100%; width: 100%;
+	position: absolute;
+	top: 0; 
+	border-radius: 2px;
+	border-bottom: 2px solid black;
+}
+
+header h1{
+	font-family: "Courier";
+	color: #fff;
+	font-size: 3rem;
+	font-weight: bolder;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+header h2{
+	font-family: "Courier";
+	color: #fff;
+	font-size: 1.9rem;	
+	font-weight: 600;
+	font-style: italic;
+}
+
+/*
+======================
+   Container icons
+======================
+*/
+div{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;	
+	margin-top: 6em;
+	padding: 2em;
+}
+
+div ul{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	padding-top: 3em;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;	
+	justify-content: space-around;
+}
+
+div ul li{
+	position: relative;
+	list-style: none;
+	width: 80px; height: 80px;
+	margin: 0 3em;
+	transform: rotate(-30deg) skew(25deg);
+}
+
+/*
+===========
+   Icons
+===========
+*/
+li a span{
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: #000;
+	transition: 0.5s;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px !important;
+	color: #f2f2f2;
+	border-radius: 6px;
+}
+
+
+ul li:hover span{
+	box-shadow: -1px 1px 1px rgba(0,0,0,.1)
+}
+
+/*
+==============
+	Camadas
+==============
+*/
+ul li:hover span:nth-child(5){
+	transform: translate(40px, -40px);
+	opacity: 1;
+}
+
+ul li:hover span:nth-child(4){
+	transform: translate(30px, -30px);
+	opacity: .8;
+}
+
+ul li:hover span:nth-child(3){
+	transform: translate(20px, -20px);
+	opacity: .6;
+}
+
+ul li:hover span:nth-child(2){
+	transform: translate(10px, -10px);
+	opacity: .4;
+}
+
+ul li:hover span:nth-child(1){
+	transform: translate(0, 0);
+	opacity: .2;
+}
+
+/*
+======================
+	Cor das Camadas
+======================
+*/
+ul li:nth-child(1) span{
+	background: #3b5999;
+}
+
+ul li:nth-child(2) span{
+	background: #55acee;
+}
+
+ul li:nth-child(3) span{
+	background: #dd4b39;
+}
+
+ul li:nth-child(4) span{
+	background: #0077b5;
+}
+
+ul li:nth-child(5) span{
+	background: #e44051;
+}
