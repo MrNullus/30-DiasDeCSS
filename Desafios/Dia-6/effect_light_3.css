@@ -1,0 +1,117 @@
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background: #262626;
+	min-width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ul{
+	position: absolute;
+	top: 50%; 
+	transform: translate(-50%, -50%));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+ul li{
+	list-style: none;	
+	font-family: arial;
+	font-size: 4.5rem;
+	letter-spacing: 15px;
+	color: #484848;
+	text-shadow: none;
+	animation: animate 2s linear infinite;	
+}
+
+@keyframes animate{
+	0%{
+		color: #484848;	
+		text-shadow: none;
+	}
+
+	18%{
+		color: #484848;	
+		text-shadow: none;
+	}
+
+	20%{
+		color: #fff900;	
+		text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+	}
+
+	30%{
+		color: #fff900;	
+		text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+	}
+
+	35%{
+		color: #fff900;	
+		text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+	}
+
+	70%{
+		color: #484848;	
+		text-shadow: none;
+	}
+
+	85%{
+		color: #fff900;	
+		text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+	}
+
+	90%{
+		color: #484848;	
+		text-shadow: none;
+	}	
+
+	100%{
+		color: #484848;	
+		text-shadow: none;
+	}
+}
+
+ul li:nth-child(1){
+	animation-delay: .2s;
+}
+
+ul li:nth-child(2){
+	animation-delay: .4s;
+}
+
+ul li:nth-child(3){
+	animation-delay: .6s;
+}
+ 
+ul li:nth-child(4){
+	animation-delay: .8s;
+}
+
+ul li:nth-child(5){
+	animation-delay: 1s;
+}
+
+ul li:nth-child(6){
+	animation-delay: 1.2s;
+}
+
+ul li:nth-child(7){
+	animation-delay: 1.4s;
+}
+
+ul li:nth-child(8){
+	animation-delay: 1.6s;
+}
+
+ul li:nth-child(9){
+	animation-delay: 1.8s;
+}
+
