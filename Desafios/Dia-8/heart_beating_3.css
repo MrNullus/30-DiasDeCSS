@@ -1,0 +1,53 @@
+body{
+	background-color: black;		
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1{
+	color: white;
+	font-size: 4rem;
+	font-family: cursive;
+	text-align: center;
+	color: transparent;
+	animation: effect 0.8s linear infinite;
+}
+
+@keyframes effect{
+	0%{
+		background:linear-gradient(red ,#0A135A);
+		-webkit-background-clip: text;
+	}
+}
+
+.human-heart{
+	margin: 5rem;
+	-webkit-animation: beatHeart 0.8s infinite;
+	animation: beatHeart 0.8s infinite;
+}
+
+@keyframes beatHeart{
+	0%{
+		transform: scale(1);
+	}
+
+	25%{
+		transform: scale(1.1);
+	}
+
+	40%{
+		transform: scale(1);
+	}
+
+	60%{
+		transform: scale(1.1);
+	}
+
+	100%{
+		transform: scale(1);
+	}
+}
