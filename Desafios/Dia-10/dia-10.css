@@ -1,0 +1,110 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, sans-serif;
+}
+
+body{
+    min-width: 100vh; min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #20B89A;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.word-swith h1{
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.word-swith h1 span::before{
+    content: '';
+    animation: word-swith 3s infinite;
+}
+
+@keyframes word-swith {
+    0% {
+        content: '💻 Mf'
+    }
+
+    50%{
+        content: '🍕 Ms';
+    }
+
+    100%{
+        content: '🎮Gm';
+    }
+}
+
+.box-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #343f4f;
+    min-width: 100vh; height: 200px; 
+}
+
+.wrapper{
+  display: flex;
+}
+
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
