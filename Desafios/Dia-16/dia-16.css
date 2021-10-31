@@ -1,0 +1,53 @@
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #121212;
+	min-width: 100vh; min-height: 100vh;
+}
+
+.btn{
+	width: 300px; height: 90px;
+	border: 3px outset #f3f3f3;
+	position: absolute;
+	top: 50%; left: 40%;
+	transform: translate(-50%, -50%);
+	background: #ffc107;
+	cursor: pointer;
+	border-radius: 5px;
+	overflow: hidden;
+} 
+
+.btn::before{
+	font-family: sans-serif;
+	color: white;
+	content: 'Hover Me Felas';
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);	
+	font-size: 20px;
+	transition: all 0.5s;	
+}
+
+.btn:hover::before{
+	top: -30%;
+}
+
+.btn:after{
+	font-family: 'Ionicons';
+	content: '\f141';
+	font-size: 60px;
+	color: red;
+	position: absolute;
+	top: 140%; left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.btn:hover::after{
+	padding-top: 5%;
+	top: 50%;
+	background: #000;
+	width: 100%; height: 100%;
+}
