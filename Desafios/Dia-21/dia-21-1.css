@@ -1,0 +1,42 @@
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'robot', sans-serif;
+	background: #5ddd;
+}
+
+.container{
+	border-left: 6px solid black;
+	border-right: 6px solid black;
+	width: 36%;
+}
+
+.circle{
+	width: 20px; height: 20px;
+	border-radius: 50%;
+	background: #2666;
+	border: 1px solid #262626;
+	animation: X-asix 4s infinite linear;	
+}
+
+.wrraper{
+	width: 100%; height: 40vh;
+	padding: 2rem;
+	animation: Y-asix 1s infinite linear;
+}
+
+
+@keyframes X-asix{
+	50%{
+		transform: translateX(500px);
+	}
+}
+
+@keyframes Y-asix{
+	50%{
+		transform: translateY(90px);
+	}
+}
