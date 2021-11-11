@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	min-width: 100vh; min-height: 100vh;
+	background: #590DC0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 6rem;
+	color: #fff;
+	animation: bg 2s infinite;
+}
+
+h3{
+	padding: 2rem;
+	color: #000;
+}
+
+@keyframes bg{
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
+
