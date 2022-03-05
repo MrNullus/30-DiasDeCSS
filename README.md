@@ -59,6 +59,3 @@ Gostou da ideia?
 * [Dia 29 - Menu responsivo com Media Queries](#id29)
 * [Dia 30 - Fogos de artificio](#id30)
 
-
-##  Desafio dia 01 - Ícone de mídia social em camadas <a name="id01"></a>
-### Dia concluído 
